@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgojhjp7wd51y"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_5nvhw"]
+[ext_resource type="PackedScene" uid="uid://bq8tna0djfbd7" path="res://Scenes/level_one_tile_map.tscn" id="1_k443m"]
+[ext_resource type="PackedScene" uid="uid://dyjlxddoxrwxc" path="res://Characters/player_one.tscn" id="2_tbjfa"]
+[ext_resource type="PackedScene" uid="uid://bocfeapfxa7w3" path="res://Items/wrapping_paper.tscn" id="3_j58qs"]
+[ext_resource type="PackedScene" uid="uid://dbxmx08kuq3cu" path="res://Items/coal_gun.tscn" id="5_3b7u1"]
+[ext_resource type="PackedScene" uid="uid://cwldu6y0kgiex" path="res://Items/present.tscn" id="6_8du1e"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_5nvhw")
+
+[node name="LevelOneTileMap" parent="." instance=ExtResource("1_k443m")]
+
+[node name="PlayerOne" parent="." instance=ExtResource("2_tbjfa")]
+position = Vector2(106, 215)
+
+[node name="WrappingPaper" parent="." instance=ExtResource("3_j58qs")]
+position = Vector2(215, 220)
+
+[node name="CoalGun" parent="." instance=ExtResource("5_3b7u1")]
+position = Vector2(131, 285)
+
+[node name="Present" parent="." instance=ExtResource("6_8du1e")]
+position = Vector2(171, 233)
+
+[node name="Present2" parent="." instance=ExtResource("6_8du1e")]
+position = Vector2(283, 280)
+
+[node name="Present3" parent="." instance=ExtResource("6_8du1e")]
+position = Vector2(68, 253)
+
+[node name="Present4" parent="." instance=ExtResource("6_8du1e")]
+position = Vector2(226, 187)
+
+[node name="Present5" parent="." instance=ExtResource("6_8du1e")]
+position = Vector2(223, 277)
+
+[connection signal="child_exiting_tree" from="." to="." method="_on_child_exiting_tree"]

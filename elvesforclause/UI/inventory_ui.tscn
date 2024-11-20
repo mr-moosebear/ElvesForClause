@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://c03bils6sl4os"]
+
+[ext_resource type="Script" path="res://UI/inventory_ui.gd" id="1_x57vp"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x57vp")
+
+[node name="ShortRangeSlot" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.552941, 1, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ShortRangeSlot"]
+position = Vector2(20.5, 20.5)
+scale = Vector2(3.125, 3.875)
+
+[node name="LongRangeSlot" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 51.0
+offset_right = 91.0
+offset_bottom = 40.0
+color = Color(0.552941, 1, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="LongRangeSlot"]
+position = Vector2(20, 20)
+scale = Vector2(0.833333, 1.66667)
+
+[node name="TrapSlot" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 1.0
+offset_right = 145.0
+offset_bottom = 41.0
+color = Color(0.552941, 1, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="TrapSlot"]
+position = Vector2(20, 20)
+scale = Vector2(0.833333, 1.66667)
