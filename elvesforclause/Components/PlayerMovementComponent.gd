@@ -1,7 +1,7 @@
 class_name CompCharacterMove
 extends Node
 
-
+# Handles Player Movement
 @export var player : CharacterBody2D
 
 @export var speed : float = 100;
