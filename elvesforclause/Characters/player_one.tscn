@@ -30,5 +30,3 @@ offset_left = -274.0
 offset_top = 119.0
 offset_right = -274.0
 offset_bottom = 119.0
-
-[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
