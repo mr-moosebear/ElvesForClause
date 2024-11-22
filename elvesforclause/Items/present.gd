@@ -8,7 +8,9 @@ func _process(delta: float) -> void:
 	if can_pickup:
 		if Input.is_action_just_pressed("attack"):
 			Global.present = random_gift(gift)
+			print(Global.present)
 			queue_free()
+
 
 # TODO: Create a way that if an item hasn't been picked after 3x pick that
 func random_gift(arr: Array) -> String:

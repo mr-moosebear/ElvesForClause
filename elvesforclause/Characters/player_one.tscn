@@ -11,16 +11,16 @@ size = Vector2(18, 31)
 [node name="PlayerOne" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_lvsi3")
 
+[node name="CompCharacterMove" type="Node" parent="." node_paths=PackedStringArray("player")]
+script = ExtResource("3_myhgu")
+player = NodePath("..")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_0yvxe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_q8p6s")
-
-[node name="CompCharacterMove" type="Node" parent="." node_paths=PackedStringArray("player")]
-script = ExtResource("3_myhgu")
-player = NodePath("..")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -30,3 +30,5 @@ offset_left = -274.0
 offset_top = 119.0
 offset_right = -274.0
 offset_bottom = 119.0
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]

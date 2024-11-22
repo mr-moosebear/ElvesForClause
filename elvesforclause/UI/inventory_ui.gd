@@ -2,7 +2,7 @@ extends Control
 
 var items : Dictionary = {
 	"wrapping_paper": "res://Art/MyArt/WrappingPaper.png",
-	"coal_gun": "res://Art/Sprite-0030.png"
+	"coal_gun": "res://Art/grenade_launcher.png"
 }
 
 func update_short_range() -> void:
