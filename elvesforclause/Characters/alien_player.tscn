@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://io3pps7kk63i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_03242"]
+
+[node name="AlienPlayer" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_03242")
